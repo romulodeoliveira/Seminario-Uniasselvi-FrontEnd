@@ -4,8 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seminario</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Olá Mundo</h1>
+    <h1>Consumindo API de CPF</h1>
+
+    <!-- Olá Mundo -->
+    <div class="box">
+      <h3>1️⃣ Testar Olá Mundo</h3>
+      <button onclick="olaMundo()">Chamar endpoint</button>
+      <pre id="olaOutput"></pre>
+    </div>
+
+    <!-- Gerar CPF -->
+    <div class="box">
+      <h3>2️⃣ Gerar CPF</h3>
+      <label>
+        <input type="checkbox" id="formatado" />
+        Formatar automaticamente (###.###.###-##)
+      </label>
+      <button onclick="gerarCPF()">Gerar</button>
+      <pre id="gerarOutput"></pre>
+    </div>
+
+    <!-- Validar CPF -->
+    <div class="box">
+      <h3>3️⃣ Validar CPF</h3>
+      <input type="text" id="cpfValidar" placeholder="Digite o CPF" />
+      <button onclick="validarCPF()">Validar</button>
+      <pre id="validarOutput"></pre>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
