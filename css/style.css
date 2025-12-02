@@ -1,8 +1,22 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  max-width: 600px;
+  height: 100vh; /* ocupar toda a altura da tela */
+  margin: 0; /* remove margens padrão */
+  display: flex; /* ativa flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  background: #f4f4f4; /* opcional */
 }
+
+main {
+  width: 100%;
+  max-width: 600px; /* limita largura */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
 input,
 button {
   margin: 5px 0;
